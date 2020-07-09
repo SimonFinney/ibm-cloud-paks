@@ -5,9 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export { ComboButton, ComboButtonItem } from './ComboButton';
-export { ErrorPage } from './ErrorPage';
-
 export {
   FilterPanel,
   FilterPanelAccordion,
@@ -16,4 +13,4 @@ export {
   FilterPanelCheckboxWithOverflowMenu,
   FilterPanelGroup,
   FilterPanelSearch,
-} from './FilterPanel';
+} from '@carbon/ibm-security';

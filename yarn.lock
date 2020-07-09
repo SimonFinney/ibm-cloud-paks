@@ -1405,10 +1405,10 @@
     "@carbon/import-once" "^10.3.0"
     "@carbon/layout" "^10.9.2"
 
-"@carbon/ibm-security@^1.26.0":
-  version "1.26.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibm-security/-/ibm-security-1.26.0.tgz#7bdf680ac8c5d8055eb69dd288eb274509bd8714"
-  integrity sha512-dTcxPzZdT1owNEGqD3hBv+3BSWr0zhVSEm5Lcs7b2Okt5kSa8mTv7DRO9TSHSsU6nlxq8jzVsl89Bv8r/+B48Q==
+"@carbon/ibm-security@^1.27.0":
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibm-security/-/ibm-security-1.27.0.tgz#b72d5a1f4b9d7e95acb536ffa404362fbe229048"
+  integrity sha512-Fy1Q03C+odc2MljzzmB5WD7RnYTmWEMJhpsO83+dQJmbbyKeY6Hrb9/jMCTAJWa+3wDagdmr3+I81aWnJ/PMsg==
   dependencies:
     "@babel/runtime" "^7.4.3"
     "@carbon/colors" "10.9.2"
