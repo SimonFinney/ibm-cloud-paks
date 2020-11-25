@@ -13,7 +13,7 @@ import {
   OverflowMenu,
   OverflowMenuItem,
 } from 'carbon-components-react';
-import setupGetInstanceId from 'carbon-components-react/es/tools/setupGetInstanceId';
+import setupGetInstanceId from 'carbon-components-react/lib/tools/setupGetInstanceId';
 
 import classnames from 'classnames';
 import { node, string } from 'prop-types';

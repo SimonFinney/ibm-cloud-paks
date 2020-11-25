@@ -7,6 +7,8 @@
 
 // `setupFilesAfterEnv` enables running the code immediately after the test framework has been installed in the environment - https://jestjs.io/docs/en/configuration.html#setupfilesafterenv-array
 
+import '@testing-library/jest-dom';
+
 // **TODO** restore 12-13 & 32-73 and remove 75-81 once carbon fixes issues that fail our tests
 
 // import chalk from 'chalk';
