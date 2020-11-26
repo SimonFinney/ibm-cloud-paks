@@ -14,7 +14,7 @@ import { ComboButton, ComboButtonItem } from '..';
 const { name } = ComboButtonItem;
 
 describe(ComboButton.name, () => {
-  it('displays the first action as the primary action', () => {
+  test('displays the first action as the primary action', () => {
     const testId = 'testId';
 
     expect(
@@ -26,7 +26,7 @@ describe(ComboButton.name, () => {
     ).toHaveClass(`${settings.prefix}--btn`);
   });
 
-  it('displays subsequent actions as secondary actions', () => {
+  test('displays subsequent actions as secondary actions', () => {
     const testId = 'testId';
 
     expect(
