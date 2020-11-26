@@ -10,6 +10,9 @@
 let accessibilityChecker;
 
 export default async (node, label) => {
+  // https://jestjs.io/docs/en/jest-object#jestsettimeouttimeout
+  jest.setTimeout(10000);
+
   // For performance, defer initialization to when the matcher is needed.
   if (!accessibilityChecker) {
     accessibilityChecker = require('accessibility-checker');
