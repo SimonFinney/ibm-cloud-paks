@@ -11,7 +11,7 @@ import React from 'react';
 /**
  * The combo button item provides additional actions a user can take.
  */
-const ComboButtonItem = ({ ...rest }) => <span {...rest} />;
+export const ComboButtonItem = ({ ...rest }) => <span {...rest} />;
 
 ComboButtonItem.propTypes = {
   /** Provide the contents of the `ComboButtonItem` */
@@ -28,5 +28,3 @@ ComboButtonItem.defaultProps = {
   disabled: null,
   href: null,
 };
-
-export default ComboButtonItem;

@@ -34,7 +34,7 @@ const getActionProps = ({ props: { disabled, href, ...props } }, rest) => ({
 /**
  * The combo button consolidates similar actions, while exposing the most commonly used one.
  */
-const ComboButton = ({ children, className, overflowMenu, ...rest }) => {
+export const ComboButton = ({ children, className, overflowMenu, ...rest }) => {
   const { current: instanceId } = useRef(getInstanceId());
   const [isOpen, setIsOpen] = useState(false);
 
@@ -90,5 +90,3 @@ ComboButton.defaultProps = {
   className: null,
   overflowMenu: OverflowMenu.defaultProps,
 };
-
-export default ComboButton;
