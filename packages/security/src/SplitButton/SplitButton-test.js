@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { ComboButton } from '..';
+import { SplitButton } from '..';
 
-describe(ComboButton.name, () => {
+describe(SplitButton.name, () => {
   test('passes', () => {
     expect(true).toBeTruthy();
   });

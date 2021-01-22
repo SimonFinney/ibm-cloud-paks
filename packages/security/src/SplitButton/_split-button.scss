@@ -17,47 +17,47 @@
 @import 'carbon-components/scss/components/button/button';
 @import 'carbon-components/scss/components/overflow-menu/overflow-menu';
 
-@include exports($name: combo-button) {
+@include exports($name: split-button) {
   /// Sets the prefix for all IBM Security-specific classes.
   /// @access private
   /// @type String
   $security--prefix: security;
 
-  .#{$security--prefix}--combo-button {
+  .#{$security--prefix}--split-button {
     position: relative;
     display: inline-flex;
   }
 
-  .#{$security--prefix}--combo-button__overflow-menu {
+  .#{$security--prefix}--split-button__overflow-menu {
     width: carbon--mini-units($count: 6);
     height: auto;
     background-color: $interactive-01;
     border-left: carbon--rem($px: 1px) solid $ui-03;
   }
 
-  .#{$security--prefix}--combo-button__overflow-menu.#{$prefix}--overflow-menu:hover,
-  .#{$security--prefix}--combo-button__overflow-menu.#{$prefix}--overflow-menu--open {
+  .#{$security--prefix}--split-button__overflow-menu.#{$prefix}--overflow-menu:hover,
+  .#{$security--prefix}--split-button__overflow-menu.#{$prefix}--overflow-menu--open {
     background-color: $hover-primary;
   }
 
-  .#{$security--prefix}--combo-button__overflow-menu.#{$prefix}--overflow-menu:active {
+  .#{$security--prefix}--split-button__overflow-menu.#{$prefix}--overflow-menu:active {
     background-color: $active-primary;
   }
 
-  .#{$security--prefix}--combo-button__overflow-menu__icon {
+  .#{$security--prefix}--split-button__overflow-menu__icon {
     pointer-events: none;
     fill: $icon-03;
   }
 
-  .#{$security--prefix}--combo-button__overflow-menu__list {
+  .#{$security--prefix}--split-button__overflow-menu__list {
     width: 100%;
   }
 
-  .#{$security--prefix}--combo-button__overflow-menu__list:after {
+  .#{$security--prefix}--split-button__overflow-menu__list:after {
     display: none;
   }
 
-  .#{$security--prefix}--combo-button__overflow-menu__item {
+  .#{$security--prefix}--split-button__overflow-menu__item {
     max-width: none;
   }
 }

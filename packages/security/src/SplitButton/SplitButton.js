@@ -20,7 +20,7 @@ import React, { Children, createElement, useRef, useState } from 'react';
 
 const getInstanceId = setupGetInstanceId();
 
-const blockClass = 'security--combo-button';
+const blockClass = 'security--split-button';
 
 const getActionProps = ({ props: { disabled, href, ...props } }, rest) => ({
   disabled,
@@ -30,9 +30,9 @@ const getActionProps = ({ props: { disabled, href, ...props } }, rest) => ({
 });
 
 /**
- * The combo button consolidates similar actions, while exposing the most commonly used one.
+ * The split button consolidates similar actions, while exposing the most commonly used one.
  */
-const ComboButton = ({ children, className, overflowMenu, ...rest }) => {
+const SplitButton = ({ children, className, overflowMenu, ...rest }) => {
   const { current: instanceId } = useRef(getInstanceId());
   const [isOpen, setIsOpen] = useState(false);
 
@@ -73,8 +73,8 @@ const ComboButton = ({ children, className, overflowMenu, ...rest }) => {
   );
 };
 
-ComboButton.propTypes = {
-  /** Provide the contents of the `ComboButton` */
+SplitButton.propTypes = {
+  /** Provide the contents of the `SplitButton` */
   children: node.isRequired,
 
   /** Provide an optional class to be applied to the containing node */
@@ -84,9 +84,9 @@ ComboButton.propTypes = {
   overflowMenu: OverflowMenu.propTypes,
 };
 
-ComboButton.defaultProps = {
+SplitButton.defaultProps = {
   className: null,
   overflowMenu: OverflowMenu.defaultProps,
 };
 
-export { ComboButton };
+export { SplitButton };
