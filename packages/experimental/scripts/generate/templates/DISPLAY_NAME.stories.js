@@ -11,25 +11,35 @@ import sectionTitle from '../../../config';
 
 import { DISPLAY_NAME } from '.';
 
-import page from './DISPLAY_NAME.mdx';
-import styles from './_STYLE_NAME.scss';
+import mdx from './DISPLAY_NAME.mdx';
+import styles from './DISPLAY_NAME-story.scss';
 
 const { name } = DISPLAY_NAME;
 
 export default {
   title: `${sectionTitle}/${name}`,
   component: DISPLAY_NAME,
-
-  // TODO: Component args - https://storybook.js.org/docs/react/writing-stories/args#DISPLAY_NAME-args
-  args: {
-    children: name,
-  },
   parameters: {
     docs: {
-      page,
+      mdx,
     },
     styles,
   },
 };
 
-export const Default = (args) => <DISPLAY_NAME {...args} />;
+export const _Default = () => {
+  return <DISPLAY_NAME>{name}</DISPLAY_NAME>;
+};
+
+_Default.story = {
+  name,
+};
+
+export const Playground = (args) => {
+  return <DISPLAY_NAME {...args} />;
+};
+
+// TODO: Args - https://storybook.js.org/docs/react/writing-stories/args
+Playground.args = {
+  children: name,
+};
