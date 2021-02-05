@@ -1,5 +1,5 @@
 //
-// Copyright IBM Corp. 2020, 2020
+// Copyright IBM Corp. 2020, 2021
 //
 // This source code is licensed under the Apache-2.0 license found in the
 // LICENSE file in the root directory of this source tree.
@@ -11,6 +11,8 @@ import { action } from '@storybook/addon-actions';
 import { ActionBar, ActionBarItem } from '.';
 import { Lightning16, Bee24 } from '@carbon/icons-react';
 
+import sectionTitle from '../../../config';
+
 import { pkgPrefix } from '../../global/js/settings';
 
 const blockClass = `${pkgPrefix}-action-bar`;
@@ -18,7 +20,7 @@ const blockClass = `${pkgPrefix}-action-bar`;
 import styles from './_storybook-styles.scss'; // import index in case more files are added later.
 
 export default {
-  title: 'Experimental/ActionBar',
+  title: `${sectionTitle}/ActionBar`,
   component: ActionBar,
   argTypes: {
     containerWidth: {

@@ -1,6 +1,6 @@
 import { _4K16 } from '@carbon/icons-react';
 //
-// Copyright IBM Corp. 2020, 2020
+// Copyright IBM Corp. 2020, 2021
 //
 // This source code is licensed under the Apache-2.0 license found in the
 // LICENSE file in the root directory of this source tree.
@@ -11,6 +11,8 @@ import { action } from '@storybook/addon-actions';
 
 import { ModifiedTabs } from '.';
 import { Modal, RadioButton, RadioButtonGroup } from 'carbon-components-react';
+
+import sectionTitle from '../../../config';
 
 import styles from './_storybook-styles.scss'; // import index in case more files are added later.
 
@@ -32,7 +34,7 @@ const commonStoryCode = {
 };
 
 export default {
-  title: 'Experimental/ModifiedTabs',
+  title: `${sectionTitle}/ModifiedTabs`,
   component: ModifiedTabs,
   parameters: { styles },
 };

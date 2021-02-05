@@ -1,5 +1,5 @@
 //
-// Copyright IBM Corp. 2020, 2020
+// Copyright IBM Corp. 2020, 2021
 //
 // This source code is licensed under the Apache-2.0 license found in the
 // LICENSE file in the root directory of this source tree.
@@ -8,6 +8,9 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Add20 } from '@carbon/icons-react';
+
+import sectionTitle from '../../../config';
+
 import CustomIllustration from './assets/light/error.svg';
 import mdx from './EmptyState.mdx';
 
@@ -16,7 +19,7 @@ import { EmptyState } from '.';
 import styles from './_index.scss';
 
 export default {
-  title: 'Experimental/EmptyState',
+  title: `${sectionTitle}/EmptyState`,
   component: EmptyState,
   parameters: {
     styles,

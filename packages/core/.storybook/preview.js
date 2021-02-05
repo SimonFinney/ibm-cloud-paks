@@ -9,6 +9,8 @@ import { withInfo } from '@storybook/addon-info';
 import React, { useEffect } from 'react';
 import { withCarbonTheme } from '@carbon/storybook-addon-theme/react';
 
+import { deprecatedSectionTitle, sectionTitle } from '../config';
+
 import index from './index.scss';
 
 const Style = ({ children, styles }) => {
@@ -46,6 +48,12 @@ const parameters = {
   // Optional default Carbon theme.
   carbonTheme: {
     theme: 'g10',
+  },
+
+  options: {
+    storySort: {
+      order: [sectionTitle, deprecatedSectionTitle],
+    },
   },
 };
 

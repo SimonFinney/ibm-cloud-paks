@@ -1,5 +1,5 @@
 //
-// Copyright IBM Corp. 2020, 2020
+// Copyright IBM Corp. 2020, 2021
 //
 // This source code is licensed under the Apache-2.0 license found in the
 // LICENSE file in the root directory of this source tree.
@@ -17,6 +17,9 @@ import {
   Form,
 } from 'carbon-components-react';
 import { action } from '@storybook/addon-actions';
+
+import sectionTitle from '../../../config';
+
 import { APIKeyModal } from '.';
 import styles from './_storybook-styles.scss'; // import index in case more files are added later.
 import mdx from './APIKeyModal.mdx';
@@ -24,7 +27,7 @@ import { pkgPrefix } from '../../global/js/settings';
 import wait from '../../global/js/utils/wait';
 
 export default {
-  title: 'Experimental/APIKeyModal',
+  title: `${sectionTitle}/APIKeyModal`,
   component: APIKeyModal,
   parameters: {
     styles,

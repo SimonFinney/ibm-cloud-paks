@@ -1,5 +1,5 @@
 /**
- * Copyright IBM Corp. 2020, 2020
+ * Copyright IBM Corp. 2020, 2021
  *
  * This source code is licensed under the Apache-2.0 license found in the
  * LICENSE file in the root directory of this source tree.
@@ -8,6 +8,9 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from 'carbon-components-react';
+
+import sectionTitle from '../../../config';
+
 import ExampleLogo from './example-logo.svg';
 import mdx from './AboutModal.mdx';
 import ansibleLogo from './technologyUsedLogos/ansible_logo.png';
@@ -19,7 +22,7 @@ import { AboutModal } from './AboutModal';
 import styles from './_index.scss';
 
 export default {
-  title: 'Experimental/AboutModal',
+  title: `${sectionTitle}/AboutModal`,
   component: AboutModal,
   parameters: {
     styles,

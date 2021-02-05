@@ -1,5 +1,5 @@
 //
-// Copyright IBM Corp. 2020, 2020
+// Copyright IBM Corp. 2020, 2021
 //
 // This source code is licensed under the Apache-2.0 license found in the
 // LICENSE file in the root directory of this source tree.
@@ -7,12 +7,15 @@
 
 import React, { useState } from 'react';
 import { Button } from 'carbon-components-react';
+
+import sectionTitle from '../../../config';
+
 import { RemoveDeleteModal } from '.';
 import styles from './_storybook-styles.scss'; // import index in case more files are added later.
 import mdx from './RemoveDeleteModal.mdx';
 
 export default {
-  title: 'Experimental/RemoveDeleteModal',
+  title: `${sectionTitle}/RemoveDeleteModal`,
   component: RemoveDeleteModal,
   parameters: {
     styles,

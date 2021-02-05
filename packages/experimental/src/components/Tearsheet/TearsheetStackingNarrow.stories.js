@@ -1,5 +1,5 @@
 //
-// Copyright IBM Corp. 2020, 2020
+// Copyright IBM Corp. 2020, 2021
 //
 // This source code is licensed under the Apache-2.0 license found in the
 // LICENSE file in the root directory of this source tree.
@@ -8,6 +8,8 @@
 import React, { useState } from 'react';
 
 import { action } from '@storybook/addon-actions';
+
+import sectionTitle from '../../../config';
 
 import { pkgPrefix } from '../../global/js/settings';
 
@@ -20,7 +22,7 @@ import styles from './_storybook-styles.scss';
 import mdx from './TearsheetStacking.mdx';
 
 export default {
-  title: 'Experimental/Tearsheets/TearsheetStackingNarrow',
+  title: `${sectionTitle}/Tearsheets/TearsheetStackingNarrow`,
   component: TearsheetNarrow,
   parameters: { controls: { expanded: true }, styles, docs: { page: mdx } },
   argTypes: {

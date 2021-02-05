@@ -56,6 +56,7 @@
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "@carbon/ibm-cloud-cognitive-core": "^0.6.1",
     "node-sass": "^4.13.1",
     "rimraf": "^3.0.2",
     "sinon": "^7.4.2"

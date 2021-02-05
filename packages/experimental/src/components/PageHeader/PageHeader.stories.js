@@ -1,5 +1,5 @@
 //
-// Copyright IBM Corp. 2020, 2020
+// Copyright IBM Corp. 2020, 2021
 //
 // This source code is licensed under the Apache-2.0 license found in the
 // LICENSE file in the root directory of this source tree.
@@ -20,6 +20,8 @@ import {
 import { CheckmarkFilled16 } from '@carbon/icons-react';
 import { Lightning16, Bee24 } from '@carbon/icons-react';
 
+import sectionTitle from '../../../config';
+
 import { ActionBarItem } from '../ActionBar';
 import { PageActionItem } from './PageActionItem';
 import { PageHeader } from '.';
@@ -29,7 +31,7 @@ import styles from './_storybook-styles.scss'; // import index in case more file
 import mdx from './PageHeader.mdx';
 
 export default {
-  title: 'Experimental/PageHeader',
+  title: `${sectionTitle}/PageHeader`,
   component: PageHeader,
   subcomponents: {
     ActionBarItem,
